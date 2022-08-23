@@ -1,0 +1,205 @@
+/***** NAVEGADOR Y REM *****/
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+}
+html{
+	font-size: 62.5%;
+}
+/***** COMPONENTES *****/
+.border{border:solid 1px black;}
+/* header */
+.logo{
+	padding: 10px;
+}
+header{
+	display:flex; 
+	margin-bottom: 50px;
+	border-bottom: solid 1px grey;  
+	background-color: rgb(210, 13, 13); 
+	padding: 20px 0; 
+	align-items: center;
+}
+/* contenido */
+div img{
+	width: 100%;
+}
+.encabezado{
+	font-family:'Roboto';
+	font-size: 22px;
+	font-weight: bold;
+	text-align: center;
+	padding: 20px 0;
+}
+/* navbar */
+nav{
+	width: 100%
+}
+li{
+	list-style-type: none; 
+	padding: 10px; 
+	margin: 10px; 
+}
+a{
+	text-decoration: none;
+	font-size: 22px;
+}
+ul{
+	display: flex; 
+	justify-content: flex-end; 
+	flex-wrap: wrap;
+}
+/* footer */
+footer{
+	font-size: 20px;
+	display:flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 50px;
+	border-top: solid 1px grey;  
+	background-color: rgb(210, 8, 8); 
+	padding: 20px 0; 
+}
+/***** PAGES *****/
+
+/* INDEX */
+.gridContainerIndex{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: repeat(5, auto);
+	grid-template-areas: 
+	"header header"
+	"imagenPrincipalIndex imagenPrincipalIndex"
+	"encabezado encabezado"
+	"imagenLateralIzq textoLateralDer"
+	"footer footer"
+}
+header{
+	grid-area: header;
+}
+.imagenPrincipalIndex{
+	grid-area: imagenPrincipalIndex;
+}
+.encabezado{
+	grid-area: encabezado;
+}
+.imagenLateralIzq{
+	grid-area: imagenLateralIzq;
+}
+.textoLateralDer{
+	grid-area: textoLateralDer;
+	font-family: serif;
+	font-size: 22px;
+	font-weight: normal;
+	font-style: italic;
+	text-align: center;
+	padding: 50px;
+}
+footer{
+	grid-area: footer;
+}
+.imagenPrincipalIndex img, .imagenLateralIzq img{
+	width: 100%
+}
+/* VISTA MOBILE */
+@media only screen and (max-width: 768px){
+	.gridContainerIndex{
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: repeat(6, 1fr);
+		grid-template-areas: 
+		"header"
+		"imagenPrincipalIndex"
+		"encabezado"
+		"imagenLateralIzq"
+		"textoLateralDer"
+		"footer"
+	}
+	header{flex-direction: column;}
+	nav ul{justify-content: center;}
+}
+/* NOSOTROS */
+/* VISTA MOBILE */
+@media only screen and (max-width: 768px){
+	.encabezado iframe{
+		width: 100%;
+	}
+}
+/* UBICACION */
+.iframeWidth{
+	width: 100%;
+}
+/* ARTISTAS */
+.gridContainerArtistas{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: repeat(6, auto);
+	grid-template-areas: 
+	"header header header"
+	"imagenPrincipalArt imagenPrincipalArt imagenPrincipalArt"
+	"encabezado encabezado encabezado"
+	"imagenArribaIzq imagenArribaCentro imagenArribaDer"
+	"imagenAbajoIzq imagenAbajoCentro imagenAbajoDer"
+	"footer footer footer"
+}
+header{
+	grid-area: header;
+}
+.imagenPrincipalArt{
+	grid-area: imagenPrincipalArt;
+}
+.encabezado{
+	grid-area: encabezado;
+}
+.imagenArribaIzq,{
+	grid-area: imagenArribaIzq;
+}
+.imagenArribaCentro,{
+	grid-area: imagenArribaCentro;
+}
+.imagenArribaDer{
+	grid-area: imagenArribaDer;
+}
+.imagenAbajoIzq{
+	grid-area: imagenAbajoIzq;
+}
+.imagenAbajoCentro{
+	grid-area: imagenAbajoCentro;
+}
+.imagenAbajoDer{
+	grid-area: imagenAbajoDer;
+}
+footer{
+	grid-area: footer;
+}
+/*estilo imgs*/
+.imagenArribaIzq img, .imagenArribaCentro img, .imagenArribaDer img, .imagenAbajoIzq img, .imagenAbajoCentro img, .imagenAbajoDer img{
+	height: 90%;
+}
+/* VISTA MOBILE */
+@media only screen and (max-width:768px){
+	.gridContainerArtistas{
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: .5fr .5fr .5fr repeat(6, 1fr) .5fr;
+		grid-template-areas: 
+		"header"
+		"imagenPrincipalArt"
+		"encabezado"
+		"imagenArribaIzq"
+		"imagenArribaCentro" 
+		"imagenArribaDer"
+		"imagenAbajoIzq" 
+		"imagenAbajoCentro" 
+		"imagenAbajoDer"
+		"footer"
+	}
+}
+/* CONTACTO */
+.estiloFormulario{
+	font-size: 25px;
+}
+input{font-size: 18px; transition font-size: 1s;}
+input:focus{font-size: 35px;}
