@@ -4,9 +4,13 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="assets/img/welldone.ico">
+	<!-- GOOGLE FONTS -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<!-- AOS -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<!-- MI CSS -->
 	<link rel="stylesheet" href="css/estilo.css">
 	<title>Inicio</title>
 </head>
@@ -38,9 +42,9 @@
 			<h1>WELLDONE TATTOOS</h1>
 		</div>
 		<div class="textoLateralDer">
-			<p>Una de las paredes de nuestro local, repleta de flashes disponibles para tatuar.</p>
+			<p class="fontFamily">Una de las paredes de nuestro local, repleta de flashes disponibles para tatuar.</p>
 		</div>
-		<div class="imagenLateralIzq">
+		<div data-aos="fade-up" class="imagenLateralIzq">
 			<img src="assets/img/header2.png" alt="FlashTatuaje">
 		</div>
 		<!-- INICIO FOOTER -->
@@ -64,5 +68,10 @@
 		</footer>
 	</div>
 	<!-- CIERRE CONTENEDOR GRID PADRE -->
+<!--AOS-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+	AOS.init();
+</script>
 </body>
 </html>

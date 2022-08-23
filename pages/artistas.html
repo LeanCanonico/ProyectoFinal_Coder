@@ -4,9 +4,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="../assets/img/welldone.ico">
+	<!-- GOOGLE FONTS -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@300&display=swap" rel="stylesheet">	<!-- AOS -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<!-- MI CSS -->
 	<link rel="stylesheet" href="../css/estilo.css">
 	<title>Artistas</title>
 </head>
@@ -35,25 +38,37 @@
 			<img src="../assets/img/tatuadores.png" alt="Tatuador">
 		</div>
 		<div class="encabezado">
-			<h1>Nuestros tatuadores</h1>
+			<h1>NUESTROS TATUADORES</h1>
 		</div>
-		<div class="imagenArribaIzq ">
-			<a href="https://www.instagram.com/marianocastiglioni/" target="_BLANK"><img src="../assets/img/mariano.png" alt="MarianoCastiglioni">Mariano Castiglioni</a>
+		<div data-aos="flip-left" class="imagenArribaIzq ">
+			<a href="https://www.instagram.com/marianocastiglioni/" target="_BLANK"><img src="../assets/img/mariano.png" alt="MarianoCastiglioni"></a>
+			<h2>Mariano Castiglioni</h2>
+			<p class="textoMariano">Mariano empezo a tatuar hace 30 años, y es el fundador del estudio.</p>
 		</div>
-		<div class="imagenArribaCentro">
-			<a href="https://www.instagram.com/dominguezdumois/" target="_BLANK"><img src="../assets/img/turco.png" alt="TurcoDumois">Dominguez Dumois</a>
+		<div data-aos="zoom-in" class="imagenArribaCentro">
+			<a href="https://www.instagram.com/dominguezdumois/" target="_BLANK"><img src="../assets/img/turco.png" alt="TurcoDumois"></a>
+			<h2>Dominguez Dumois</h2>
+			<p class="textoTurco">El turco es un tatuador que emigro de Turquia hace 10 años.</p>
 		</div>
-		<div class="imagenArribaDer">
-			<a href="https://www.instagram.com/xpiranhax/" target="_BLANK"><img src="../assets/img/piranha.png" alt="JuanPiranha">Juan Manuel Piranha</a>
+		<div data-aos="flip-right" class="imagenArribaDer">
+			<a href="https://www.instagram.com/xpiranhax/" target="_BLANK"><img src="../assets/img/piranha.png" alt="JuanPiranha"></a>
+			<h2>Juan Manuel Piranha</h2>
+			<p class="textoPiranha">Juan empezo siendo artista plastico, pero comenzo a tatuar hace 8 años.</p>
 		</div>
-		<div class="imagenAbajoIzq">
-			<a href="https://www.instagram.com/masomanzur/" target="_BLANK"><img src="../assets/img/leandro.png" alt="LeandroManzur">Leandro Manzur</a>
+		<div data-aos="flip-left" class="imagenAbajoIzq">
+			<a href="https://www.instagram.com/masomanzur/" target="_BLANK"><img src="../assets/img/leandro.png" alt="LeandroManzur"></a>
+			<h2>Leandro Manzur</h2>
+			<p class="textoLeandro">Leandro "el bebe" se especializa en el estilo de tatuaje tradicional americano.</p>
 		</div>
-		<div class="imagenAbajoCentro">
-			<a href="https://www.instagram.com/carlitos_wake/" target="_BLANK"><img src="../assets/img/carlos.png" alt="CarlosWake">Carlos Wake</a>
+		<div data-aos="zoom-in" class="imagenAbajoCentro">
+			<a href="https://www.instagram.com/carlitos_wake/" target="_BLANK"><img src="../assets/img/carlos.png" alt="CarlosWake"></a>
+			<h2>Carlos Wake</h2>
+			<p class="textoCarlos">Carlitos es un artista del graffiti, y sus tatuajes son inspirados en ese mundo.</p>
 		</div>
-		<div class="imagenAbajoDer">
-			<a href="https://www.instagram.com/costajoaquin/tagged/" target="_BLANK"><img src="../assets/img/joaquin.png" alt="JoaquinCosta">Joaquin Costa</a>
+		<div data-aos="flip-right" class="imagenAbajoDer">
+			<a href="https://www.instagram.com/costajoaquin/tagged/" target="_BLANK"><img src="../assets/img/joaquin.png" alt="JoaquinCosta"></a>
+			<h2>Joaquin Costa</h2>
+			<p class="textoJoaquin">Joaco tatua en muchos estilos, fue el ultimo aprendiz de Mariano.</p>
 		</div>
 		<!-- INICIO FOOTER -->
 		<footer>
@@ -75,5 +90,10 @@
 			</div>
 		</footer>
 	</div>
+<!--AOS-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+	AOS.init();
+</script>
 </body>
 </html>
