@@ -154,10 +154,10 @@ header{
 .encabezado{
 	grid-area: encabezado;
 }
-.imagenArribaIzq,{
+.imagenArribaIzq{
 	grid-area: imagenArribaIzq;
 }
-.imagenArribaCentro,{
+.imagenArribaCentro{
 	grid-area: imagenArribaCentro;
 }
 .imagenArribaDer{
@@ -202,5 +202,10 @@ footer{
 .estiloFormulario{
 	font-size: 25px;
 }
-input{font-size: 18px; transition font-size: 1s;}
-input:focus{font-size: 35px;}
+input{
+	font-size: 18px; 
+	transition font-size: 1s;
+}
+input:focus{
+	font-size: 35px;
+}
