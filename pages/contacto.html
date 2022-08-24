@@ -8,6 +8,9 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@300&display=swap" rel="stylesheet">	<!-- MI CSS -->
+	<!-- AOS -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<!-- MI CSS -->
 	<link rel="stylesheet" href="../css/estilo.css">
 	<title>Contacto</title>
 </head>
@@ -31,8 +34,10 @@
 	</header>
 	<!-- INICIO MAIN -->
 	<main>
-		<div class="encabezado">
+		<div data-aos="zoom-in">
 			<img src="../assets/img/contacto.png" alt="Contacto">
+		</div>
+		<div class="encabezado">
 			<h1>COMO CONTACTARNOS</h1>
 		</div>
 		<form class="estiloFormulario" action="">
@@ -67,5 +72,10 @@
 			</a>
 		</div>
 	</footer>
+<!--AOS-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+	AOS.init();
+</script>	
 </body>
 </html>

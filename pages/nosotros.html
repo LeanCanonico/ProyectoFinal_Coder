@@ -8,6 +8,9 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@300&display=swap" rel="stylesheet">	<!-- MI CSS -->
+	<!-- AOS -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<!-- MI CSS -->
 	<link rel="stylesheet" href="../css/estilo.css">
 	<title>Sobre nosotros</title>
 </head>
@@ -31,7 +34,7 @@
 	</header>
 	<!-- INICIO MAIN -->
 	<main>
-		<div>
+		<div data-aos="zoom-in">
 			<img src="../assets/img/nosotros.png" alt="nosotros">
 		</div>
 		<div class="encabezado">
@@ -39,14 +42,13 @@
 			<p class="fontFamily">El templo del tatuaje tradicional, desde 1991</p>
 		</div>
 		<div class="encabezado">
-			<iframe width="600" height="350" src="https://www.youtube.com/embed/Mjpei3zGEQ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			<h2>PREGUNTAS FRECUENTES</h2>
-			<!--<p>¿Que metodos de pago aceptan?</p>-->
-			<ol class="fontFamily">
-				<li>¿Que metodos de pago aceptan?</li>
-				<li>¿Como agendo un turno?</li>
-				<li>¿En que se basa el precio de mi tatuaje?</li>
-			</ol>
+			<iframe data-aos="zoom-in-up" width="600" height="350" src="https://www.youtube.com/embed/Mjpei3zGEQ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<div>
+			<h2>PREGUNTAS FRECUENTES</h2> <br>
+			<p class="fontFamily">¿Que metodos de pago aceptan?</p> <br>
+			<p class="fontFamily">¿Como agendo un turno?</p> <br>
+			<p class="fontFamily">¿En que se basa el precio de mi tatuaje?</p>
 		</div>
 	</main>
 	<!-- INICIO FOOTER -->
@@ -68,5 +70,10 @@
 			</a>
 		</div>
 	</footer>
+<!--AOS-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+	AOS.init();
+</script>		
 </body>
 </html>
