@@ -177,7 +177,7 @@ footer{
 }
 /*estilo imagenes*/
 .imagenArribaIzq img, .imagenArribaCentro img, .imagenArribaDer img, .imagenAbajoIzq img, .imagenAbajoCentro img, .imagenAbajoDer img{
-	height: 90%;
+	
 	padding: 25px;
 }
 h2, .fontFamily, .textoMariano, .textoTurco, .textoPiranha, .textoLeandro, .textoCarlos, .textoJoaquin{
