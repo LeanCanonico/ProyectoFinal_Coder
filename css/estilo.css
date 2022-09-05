@@ -101,8 +101,11 @@ header{
 footer{
 	grid-area: footer;
 }
-.imagenPrincipalIndex img, .imagenLateralIzq img{
+.imagenLateralIzq img{
 	width: 100%
+}
+.carousel-item img{
+	height: 970px;
 }
 /* VISTA MOBILE */
 @media only screen and (max-width: 768px){
@@ -120,6 +123,9 @@ footer{
 	}
 	header{flex-direction: column;}
 	nav ul{justify-content: center;}
+	.carousel-item img{
+		height: auto;
+	}
 }
 /* NOSOTROS */
 /* VISTA MOBILE */
