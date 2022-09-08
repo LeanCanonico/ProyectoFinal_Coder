@@ -3,110 +3,133 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="../assets/img/welldone.ico">
+	<link rel="icon" href="../assets/img/logo.ico">
 	<!-- GOOGLE FONTS -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald&family=Roboto:wght@300&display=swap" rel="stylesheet">
 	<!-- AOS -->
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<!-- CSS BOOTSTRAP -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<!-- MI CSS -->
 	<link rel="stylesheet" href="../css/estilo.css">
 	<title>Artistas</title>
 </head>
 <body>
-	<!-- INICIO CONTENEDOR GRID PADRE -->
-	<div class="gridContainerArtistas">
-		<!-- INICIO HEADER -->
-		<header>
-			<div class="logo">
-				<a href="../index.html">
-					<img src="../assets/img/logo1.png" alt="logo">
-				</a>
+	<!-- CONTENEDOR BS PADRE -->
+	<div class="container-fluid">
+		<!-- INICIO CONTENEDOR GRID PADRE -->
+		<div class="gridContainerArtistas">
+			<!-- INICIO HEADER -->
+			<header class="row px-0">
+				<div class="col-12 col-lg-12">
+					<nav class="navbar navbar-expand-lg navbar-light bg-lignt">
+						<div class="container-fluid">
+						<a class="navbar-brand" href="#"><img src="../assets/img/logoWelldone.png" alt="logo"></a>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link" href="../index.html">Inicio</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="nosotros.html">Sobre nosotros</a>
+								</li>
+									<li class="nav-item">
+									<a class="nav-link" href="ubicacion.html">Donde nos encontras</a>
+								</li>
+									<li class="nav-item">
+									<a class="nav-link active" aria-current="page" href="#">Artistas</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="contacto.html">Contacto</a>
+								</li>
+							</ul>
+						</div>
+						</div>
+					</nav>
+				</div>
+			</header>
+			<!-- INICIO CONTENIDO -->
+			<div data-aos="zoom-in" class="imagenPrincipalArt">
+				<img src="../assets/img/tatuadores.png" alt="Tatuador">
 			</div>
-			<nav>
-				<ul>
-					<li><a href="../index.html">Inicio</a></li>
-					<li><a href="nosotros.html">Sobre nosotros</a></li>
-					<li><a href="ubicacion.html">Donde nos encontras</a></li>
-					<li><a href="#">Artistas</a></li>
-					<li><a href="contacto.html">Contacto</a></li>
-				</ul>
-			</nav>
-		</header>
-		<!-- INICIO CONTENIDO -->
-		<div data-aos="fade-up" class="imagenPrincipalArt">
-			<img src="../assets/img/tatuadores.png" alt="Tatuador">
+			<div class="encabezado">
+				<h2>NUESTROS TATUADORES</h2>
+			</div>
+			<div data-aos="fade-up" class="imagenArribaIzq ">
+				<a href="https://www.instagram.com/marianocastiglioni/" target="_BLANK"><img src="../assets/img/mariano.png" alt="MarianoCastiglioni"></a>
+				<div class="textoMariano">
+					<h2>Mariano Castiglioni</h2>
+					<p>Mariano empezo a tatuar hace 30 años, y es el fundador del estudio.</p>
+				</div>
+			</div>
+			<div data-aos="fade-up" class="imagenArribaCentro">
+				<a href="https://www.instagram.com/dominguezdumois/" target="_BLANK"><img src="../assets/img/turco.png" alt="TurcoDumois"></a>
+				<div class="textoTurco">
+					<h2>Dominguez Dumois</h2>
+					<p>El turco es un tatuador que emigro de Turquia hace 10 años.</p>
+				</div>
+			</div>
+			<div data-aos="fade-up" class="imagenArribaDer">
+				<a href="https://www.instagram.com/xpiranhax/" target="_BLANK"><img src="../assets/img/piranha.png" alt="JuanPiranha"></a>
+				<div class="textoPiranha">
+					<h2>Juan Manuel Piranha</h2>
+					<p>Juan empezo siendo artista plastico, pero comenzo a tatuar hace 8 años.</p>
+				</div>
+			</div>
+			<div data-aos="fade-up" class="imagenAbajoIzq">
+				<a href="https://www.instagram.com/masomanzur/" target="_BLANK"><img src="../assets/img/leandro.png" alt="LeandroManzur"></a>
+				<div class="textoLeandro">
+					<h2>Leandro Manzur</h2>
+					<p>Leandro "el bebe" se especializa en el estilo de tatuaje tradicional americano.</p>
+				</div>
+			</div>
+			<div data-aos="fade-up" class="imagenAbajoCentro">
+				<a href="https://www.instagram.com/carlitos_wake/" target="_BLANK"><img src="../assets/img/carlos.png" alt="CarlosWake"></a>
+				<div class="textoCarlos">
+					<h2>Carlos Wake</h2>
+					<p>Carlitos es un artista del graffiti, y sus tatuajes son inspirados en ese mundo.</p>
+				</div>
+				</div>
+			<div data-aos="fade-up" class="imagenAbajoDer">
+				<a href="https://www.instagram.com/costajoaquin/tagged/" target="_BLANK"><img src="../assets/img/joaquin.png" alt="JoaquinCosta"></a>
+				<div class="textoJoaquin">
+					<h2>Joaquin Costa</h2>
+					<p>Joaco tatua en muchos estilos, fue el ultimo aprendiz de Mariano.</p>
+				</div>
+			</div>
+			<!-- INICIO FOOTER -->
+			<footer>
+				<div>
+					<a href="../index.html">
+						<img src="../assets/img/logoWelldone.png" alt="logo">
+					</a>
+				</div>
+				<div>
+					<p>C1414BJE, Gorriti 4421, Buenos Aires</p>
+				</div>
+				<div>
+					<p>4832-6160</p>
+				</div>
+				<div>
+					<a href="https://www.instagram.com/welldonetattoos/?hl=es "target="_BLANK">
+						<img src="../assets/img/instagram.png" alt="instagram">
+					</a>
+				</div>
+			</footer>
 		</div>
-		<div class="encabezado">
-			<h1>NUESTROS TATUADORES</h1>
-		</div>
-		<div data-aos="fade-up" class="imagenArribaIzq ">
-			<a href="https://www.instagram.com/marianocastiglioni/" target="_BLANK"><img src="../assets/img/mariano.png" alt="MarianoCastiglioni"></a>
-			<div class="textoMariano">
-				<h2>Mariano Castiglioni</h2>
-				<p>Mariano empezo a tatuar hace 30 años, y es el fundador del estudio.</p>
-			</div>
-		</div>
-		<div data-aos="fade-up" class="imagenArribaCentro">
-			<a href="https://www.instagram.com/dominguezdumois/" target="_BLANK"><img src="../assets/img/turco.png" alt="TurcoDumois"></a>
-			<div class="textoTurco">
-				<h2>Dominguez Dumois</h2>
-				<p>El turco es un tatuador que emigro de Turquia hace 10 años.</p>
-			</div>
-		</div>
-		<div data-aos="fade-up" class="imagenArribaDer">
-			<a href="https://www.instagram.com/xpiranhax/" target="_BLANK"><img src="../assets/img/piranha.png" alt="JuanPiranha"></a>
-			<div class="textoPiranha">
-				<h2>Juan Manuel Piranha</h2>
-				<p>Juan empezo siendo artista plastico, pero comenzo a tatuar hace 8 años.</p>
-			</div>
-		</div>
-		<div data-aos="fade-up" class="imagenAbajoIzq">
-			<a href="https://www.instagram.com/masomanzur/" target="_BLANK"><img src="../assets/img/leandro.png" alt="LeandroManzur"></a>
-			<div class="textoLeandro">
-				<h2>Leandro Manzur</h2>
-				<p>Leandro "el bebe" se especializa en el estilo de tatuaje tradicional americano.</p>
-			</div>
-		</div>
-		<div data-aos="fade-up" class="imagenAbajoCentro">
-			<a href="https://www.instagram.com/carlitos_wake/" target="_BLANK"><img src="../assets/img/carlos.png" alt="CarlosWake"></a>
-			<div class="textoCarlos">
-				<h2>Carlos Wake</h2>
-				<p>Carlitos es un artista del graffiti, y sus tatuajes son inspirados en ese mundo.</p>
-			</div>
-			</div>
-		<div data-aos="fade-up" class="imagenAbajoDer">
-			<a href="https://www.instagram.com/costajoaquin/tagged/" target="_BLANK"><img src="../assets/img/joaquin.png" alt="JoaquinCosta"></a>
-			<div class="textoJoaquin">
-				<h2>Joaquin Costa</h2>
-				<p>Joaco tatua en muchos estilos, fue el ultimo aprendiz de Mariano.</p>
-			</div>
-		</div>
-		<!-- INICIO FOOTER -->
-		<footer>
-			<div>
-				<a href="../index.html">
-					<img src="../assets/img/logo1.png" alt="logo">
-				</a>
-			</div>
-			<div>
-				<p>C1414BJE, Gorriti 4421, Buenos Aires</p>
-			</div>
-			<div>
-				<p>4832-6160</p>
-			</div>
-			<div>
-				<a href="https://www.instagram.com/welldonetattoos/?hl=es "target="_BLANK">
-					<img src="../assets/img/instagram.png" alt="instagram">
-				</a>
-			</div>
-		</footer>
 	</div>
-<!--AOS-->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-	AOS.init();
-</script>
+	<!-- CIERRE CONTENEDOR BS PADRE-->
+	<!--AOS-->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+	<!-- JS BOOTSTRAP -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

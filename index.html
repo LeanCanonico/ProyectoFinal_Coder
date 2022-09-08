@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="assets/img/welldone.ico">
+	<link rel="icon" href="assets/img/logo.ico">
 	<!-- GOOGLE FONTS -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,82 +17,101 @@
 	<title>Inicio</title>
 </head>
 <body>
-	<!-- CONTENEDOR GRID PADRE -->
-	<div class="gridContainerIndex">
-		<!-- INICIO HEADER -->
-		<header>
-			<div class="logo">
-				<a href="#">
-					<img src="assets/img/logo1.png" alt="logo">
-				</a>
-			</div>
-			<nav>
-				<ul>
-					<li><a href="#">Inicio</a></li>
-					<li><a href="pages/nosotros.html">Sobre nosotros</a></li>
-					<li><a href="pages/ubicacion.html">Donde nos encontras</a></li>
-					<li><a href="pages/artistas.html">Artistas</a></li>
-					<li><a href="pages/contacto.html">Contacto</a></li>
-				</ul>
-			</nav>
-		</header>
-		<!-- INICIO CONTENIDO -->
-		<div id="carouselExampleIndicators" class="carousel slide imagenPrincipalIndex" data-bs-ride="carousel">
-			<div class="carousel-indicators">
-				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-			</div>
-			<div class="carousel-inner">
-				<div data-aos="zoom-in" class="carousel-item active">
-					<img src="assets/img/header.png" class="d-block w-100" alt="FrenteLocal">
+	<!-- CONTENEDOR BS PADRE -->
+	<div class="container-fluid">
+		<!-- CONTENEDOR GRID PADRE -->
+		<div class="gridContainerIndex">
+			<!-- INICIO HEADER -->
+			<header class="row px-0">
+				<div class="col-12 col-lg-12">
+					<nav class="navbar navbar-expand-lg navbar-light bg-lignt">
+						<div class="container-fluid">
+						<a class="navbar-brand" href="#"><img src="assets/img/logoWelldone.png" alt="logo"></a>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link active light" aria-current="page" href="#">Inicio</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="pages/nosotros.html">Sobre nosotros</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="pages/ubicacion.html">Donde nos encontras</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="pages/artistas.html">Artistas</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="pages/contacto.html">Contacto</a>
+								</li>
+							</ul>
+						</div>
+						</div>
+					</nav>
 				</div>
-				<div class="carousel-item">
-					<img src="assets/img/header3.png" class="d-block w-100" alt="local">
+			</header>
+			<!-- INICIO CONTENIDO -->
+			<div id="carouselExampleIndicators" class="carousel slide imagenPrincipalIndex" data-bs-ride="carousel">
+				<div class="carousel-indicators">
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
 				</div>
-				<div class="carousel-item">
-					<img src="assets/img/header4.png" class="d-block w-100" alt="tatuaje">
+				<div class="carousel-inner">
+					<div data-aos="zoom-in" class="carousel-item active">
+						<img src="assets/img/frenteLocal.jpg" class="d-block w-100" alt="Frente local">
+					</div>
+					<div class="carousel-item">
+						<img src="assets/img/frenteLocalConGente.jpg" class="d-block w-100" alt="Frente local con gente">
+					</div>
+					<div class="carousel-item">
+						<img src="assets/img/piranhaClienta.jpg" class="d-block w-100" alt="Piranha hablando con una clienta">
+					</div>
 				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
 			</div>
-			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Previous</span>
-			</button>
-			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Next</span>
-			</button>
+			<div class="encabezado">
+				<h1>WELLDONE TATTOOS</h1>
+			</div>
+			<div class="textoLateralDer text-center">
+				<p class="fontFamily">Una de las paredes de nuestro local, repleta de flashes disponibles para tatuar.</p>
+			</div>
+			<div data-aos="fade-up" class="imagenLateralIzq">
+				<img src="assets/img/header2.png" alt="FlashTatuaje">
+			</div>
+			<!-- INICIO FOOTER -->
+			<footer>
+				<div>
+					<a href="#">
+						<img src="assets/img/logoWelldone.png" alt="logo">
+					</a>
+				</div>
+				<div>
+					<p>C1414BJE, Gorriti 4421, Buenos Aires</p>
+				</div>
+				<div>
+					<p>4832-6160</p>
+				</div>
+				<div>
+					<a href="https://www.instagram.com/welldonetattoos/?hl=es "target="_BLANK">
+						<img src="assets/img/instagram.png" alt="instagram">
+					</a>
+				</div>
+			</footer>
 		</div>
-		<div class="encabezado">
-			<h1>WELLDONE TATTOOS</h1>
-		</div>
-		<div class="textoLateralDer">
-			<p class="fontFamily">Una de las paredes de nuestro local, repleta de flashes disponibles para tatuar.</p>
-		</div>
-		<div data-aos="fade-up" class="imagenLateralIzq">
-			<img src="assets/img/header2.png" alt="FlashTatuaje">
-		</div>
-		<!-- INICIO FOOTER -->
-		<footer>
-			<div>
-				<a href="#">
-					<img src="assets/img/logo1.png" alt="logo">
-				</a>
-			</div>
-			<div>
-				<p>C1414BJE, Gorriti 4421, Buenos Aires</p>
-			</div>
-			<div>
-				<p>4832-6160</p>
-			</div>
-			<div>
-				<a href="https://www.instagram.com/welldonetattoos/?hl=es "target="_BLANK">
-					<img src="assets/img/instagram.png" alt="instagram">
-				</a>
-			</div>
-		</footer>
+		<!-- CIERRE CONTENEDOR GRID PADRE -->
 	</div>
-	<!-- CIERRE CONTENEDOR GRID PADRE -->
+	<!-- CIERRE CONTENEDOR PADRE BS -->
 	<!--AOS-->
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script>
