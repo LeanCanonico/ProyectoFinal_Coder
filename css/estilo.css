@@ -110,7 +110,7 @@ footer{
 	.gridContainerIndex{
 		display: grid;
 		grid-template-columns: 100%;
-		grid-template-rows: .5fr 1fr .5fr repeat(3, 1fr);
+		grid-template-rows: auto 1fr .5fr repeat(3, 1fr);
 		grid-template-areas: 
 		"header"
 		"imagenPrincipalIndex"
@@ -193,7 +193,7 @@ h2, .fontFamily, .textoMariano, .textoTurco, .textoPiranha, .textoLeandro, .text
 	.gridContainerArtistas{
 		display: grid;
 		grid-template-columns: 100%;
-		grid-template-rows: .5fr .5fr .5fr repeat(6, 1fr) .5fr;
+		grid-template-rows: auto .5fr .5fr repeat(6, 1fr) .5fr;
 		grid-template-areas: 
 		"header"
 		"imagenPrincipalArt"
